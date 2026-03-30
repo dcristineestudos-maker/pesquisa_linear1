@@ -13,7 +13,7 @@ public class Principal {
 
         String elementoProcurado = JOptionPane.showInputDialog("Digite o nome a ser procurado");
         flag = 0;
-        for (i = 0; i < numElementos; i++) {
+        for (i = 0; i < numElementos && flag == 0; i++) {
             if (vetorPesquisado[i].equalsIgnoreCase(elementoProcurado)) {
                 JOptionPane.showMessageDialog(null, "o valor procurado foi encontrado na posição " + i);
                 flag = 1;
@@ -23,6 +23,6 @@ public class Principal {
             JOptionPane.showMessageDialog(null, "o nome não foi encontrado.");
         }
     }
-}
+}//teste
 
  
